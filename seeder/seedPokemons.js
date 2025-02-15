@@ -27,6 +27,8 @@ const seedPokemons = async () => {
         speed: Math.floor(Math.random() * 100) + 1,
         type: data.types.map(type => type.type.name),
         moves: data.moves.slice(0, 5).map(move => move.move.name),
+        size: Math.floor(Math.random() * 100) + 1,  
+        weight: Math.floor(Math.random() * 100) + 1
       });
 
       // Save the new Pokémon instance to the database

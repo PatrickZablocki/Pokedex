@@ -8,6 +8,8 @@ const pokemonSchema = new mongoose.Schema({
   speed: { type: Number },
   type: [{ type: String }],
   moves: [{ type: String }],
+  size: {type: Number},
+  weight: {type:Number}
 });
 
 // Create a model for the Pokémon using the schema
